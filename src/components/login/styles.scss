@@ -2,13 +2,25 @@
   display: flex;
 }
 .section-1 {
-  flex: 50%;
-  padding: 2rem 1rem;
+  flex: 50% 1;
+  padding: 2rem;
 }
 .section-2 {
-  flex: 50%;
+  background: #e6ebff;
+  flex: 50% 1;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
+  text-align: center;
+  position: relative;
+}
+.form-header {
+  position: absolute;
+  top: 10%;
+}
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
 }

@@ -1,11 +1,22 @@
-html,
-body {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
