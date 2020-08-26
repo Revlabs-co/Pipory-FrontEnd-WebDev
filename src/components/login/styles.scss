@@ -6,7 +6,7 @@
   padding: 2rem;
 }
 .section-2 {
-  background: #e6ebff;
+  background: #f3f4f8;
   flex: 50% 1;
   display: flex;
   justify-content: center;
@@ -14,13 +14,23 @@
   text-align: center;
   position: relative;
 }
-.form-header {
+.form-heading {
   position: absolute;
   top: 10%;
+  font-size: 2rem;
+  letter-spacing: 2px;
 }
 .form-container {
   max-width: 500px;
   margin: 0 auto;
   padding: 0 2rem;
+  position: relative;
   width: 100%;
+}
+.forgot-password {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  position: absolute;
+  top: 40%;
+  left: 58%;
 }

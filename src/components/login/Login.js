@@ -11,11 +11,13 @@ const Login = () => {
         <img src={Image} alt="" />
       </div>
       <div className="section-2">
-        <h2 className="form-header">Login</h2>
+        <h2 className="form-heading">Login</h2>
         <form className="form-container">
           <InputBox type="username" label="Username/Email" />
           <InputBox type="password" label="Password" />
-          <a href="#">Forgot Password?</a>
+          <a href="#" className="forgot-password">
+            Forgot Password?
+          </a>
           <Button type="login" value="LOG IN" />
           <Button type="glogin" value="Sign in with Google" />
         </form>

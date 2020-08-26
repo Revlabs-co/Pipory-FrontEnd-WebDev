@@ -6,7 +6,7 @@ const InputBox = ({ label, type }) => {
       width: "70%",
       padding: "13px 10px",
       border: "none",
-      borderRadius: "10px",
+      borderRadius: "7px",
     },
     label: {
       display: "block",

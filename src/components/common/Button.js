@@ -4,14 +4,17 @@ import logo from "../../images/google.svg";
 const Button = ({ type, value }) => {
   const styles = {
     border: "none",
-    borderRadius: "10px",
+    borderRadius: "7px",
     width: "70%",
     margin: "0 auto",
     display: "block",
     padding: "13px 0",
-    marginBottom: "1rem",
+    marginTop: "2.5rem",
+    marginBottom: "3rem",
     background: "#FFF",
     position: "relative",
+    fontWeight: "bold",
+    fontSize: "16px",
   };
   return (
     <>
