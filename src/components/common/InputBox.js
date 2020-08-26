@@ -1,6 +1,6 @@
 import React from "react";
 
-const InputBox = ({ label, type }) => {
+const InputBox = ({ label, type, placeholder }) => {
   const styles = {
     input: {
       width: "70%",
@@ -17,19 +17,21 @@ const InputBox = ({ label, type }) => {
   };
   return (
     <div style={{ marginBottom: "1rem" }}>
-      <label htmlFor={label} style={styles.label}>{`${label}:`}</label>
+      <label htmlFor={label} style={styles.label}>
+        {label}
+      </label>
       {type === "password" ? (
         <input
           type={type}
           id={label}
-          placeholder={label}
+          placeholder={placeholder}
           style={styles.input}
         />
       ) : (
         <input
           type={type}
           id={label}
-          placeholder={label}
+          placeholder={placeholder}
           style={styles.input}
         />
       )}

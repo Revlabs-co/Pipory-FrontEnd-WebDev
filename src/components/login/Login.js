@@ -7,14 +7,18 @@ import "./styles.scss";
 const Login = () => {
   return (
     <div className="container">
-      <div className="section-1">
+      <div className="section-1 pad">
         <img src={Image} alt="" />
       </div>
       <div className="section-2">
         <h2 className="form-heading">Login</h2>
         <form className="form-container">
-          <InputBox type="username" label="Username/Email" />
-          <InputBox type="password" label="Password" />
+          <InputBox
+            type="username"
+            label="Username/Email:"
+            placeholder="Username/Email"
+          />
+          <InputBox type="password" label="Password:" placeholder="Password" />
           <a href="#" className="forgot-password">
             Forgot Password?
           </a>
