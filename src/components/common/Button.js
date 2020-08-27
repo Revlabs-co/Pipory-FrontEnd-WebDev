@@ -15,6 +15,7 @@ const Button = ({ type, value }) => {
     position: "relative",
     fontWeight: "bold",
     fontSize: "16px",
+    cursor: "pointer",
   };
   return (
     <>
@@ -23,10 +24,15 @@ const Button = ({ type, value }) => {
           {value}
         </button>
       ) : (
-        <button style={styles}>
+        <a
+          href="http://google.com"
+          style={styles}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={logo} alt="" style={{ position: "absolute", left: 20 }} />
           {value}
-        </button>
+        </a>
       )}
     </>
   );

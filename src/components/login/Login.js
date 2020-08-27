@@ -5,6 +5,17 @@ import Image from "../../images/login.png";
 import "./styles.scss";
 
 const Login = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = {};
+    for (let element of e.target.elements) {
+      if (element.name === "email" || element.name === "password") {
+        data[element.name] = element.value;
+      }
+    }
+    console.log(data);
+  };
+
   return (
     <div className="container">
       <div className="section-1 pad">
@@ -12,14 +23,20 @@ const Login = () => {
       </div>
       <div className="section-2">
         <h2 className="form-heading">Login</h2>
-        <form className="form-container">
+        <form className="form-container" onSubmit={handleSubmit}>
           <InputBox
-            type="username"
+            type="email"
             label="Username/Email:"
             placeholder="Username/Email"
+            name="email"
           />
-          <InputBox type="password" label="Password:" placeholder="Password" />
-          <a href="#" className="forgot-password">
+          <InputBox
+            type="password"
+            label="Password:"
+            placeholder="Password"
+            name="password"
+          />
+          <a href="false" className="forgot-password">
             Forgot Password?
           </a>
           <Button type="login" value="LOG IN" />
