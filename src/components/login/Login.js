@@ -1,7 +1,6 @@
 import React from "react";
-import InputBox from "../common/InputBox";
-import Button from "../common/Button";
 import Image from "../../images/login.png";
+import GoogleIcon from "../../images/google.svg";
 import "./styles.scss";
 
 const Login = () => {
@@ -17,33 +16,54 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
-      <div className="section-1 pad">
-        <img src={Image} alt="" />
+    <section className="flex mb-4">
+      <div className="w-1/2 bg-white h-auto">
+        <img src={Image} alt="" className="h-screen object-fill" />
       </div>
-      <div className="section-2">
-        <h2 className="form-heading">Login</h2>
-        <form className="form-container" onSubmit={handleSubmit}>
-          <InputBox
-            type="email"
-            label="Username/Email:"
-            placeholder="Username/Email"
-            name="email"
-          />
-          <InputBox
-            type="password"
-            label="Password:"
-            placeholder="Password"
-            name="password"
-          />
-          <a href="false" className="forgot-password">
-            Forgot Password?
-          </a>
-          <Button type="login" value="LOG IN" />
-          <Button type="glogin" value="Sign in with Google" />
-        </form>
+      <div className="w-1/2 lightGrayBG h-auto">
+        <div className="my-auto">
+          <div className="text-gray-900 font-bold text-3xl mb-2 text-center mt-16">Login</div>
+          <div className="w-full max-w-xs mx-auto py-8">
+            <form className="rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
+              <div className="mb-4">
+                <label className="block font-semibold text-gray-700 text-sm mb-2">
+                  Username/Email:
+                </label>
+                <input
+                  required
+                  type="email"
+                  label="Username/Email:"
+                  className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  name="email"
+                />
+              </div>
+              <div class="mb-6">
+                <label className="block font-semibold text-gray-700 text-sm mb-2">
+                  Password:
+                </label>
+                <input
+                  required
+                  type="password"
+                  label="Password:"
+                  className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                  name="password"
+                />
+                <a className="block text-gray-700 text-xs text-right hover:text-blue-700" href="#">
+                  Forgot Password?
+                </a>
+              </div>
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full mb-4" type="button">
+                Log In
+              </button>
+              <button className="bg-white hover:bg-white py-2 px-4 rounded w-full flex items-center" type="button">
+                <img src={GoogleIcon} alt="" className="h-5 w-5 ml-3" />
+                <div className="font-bold text-black ml-8">Sign in with Google</div>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
