@@ -20,3 +20,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+$buttonColor: #20319F;
+
+button {
+  background-color: $buttonColor;
+}

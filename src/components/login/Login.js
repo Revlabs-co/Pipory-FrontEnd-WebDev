@@ -32,8 +32,9 @@ const Login = () => {
                 <input
                   required
                   type="email"
+                  placeholder="Username/Email....."
                   label="Username/Email:"
-                  className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 text-xs leading-tight focus:outline-none focus:shadow-outline"
                   name="email"
                 />
               </div>
@@ -45,15 +46,16 @@ const Login = () => {
                   required
                   type="password"
                   label="Password:"
-                  className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                  placeholder="Password...."
+                  className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 text-xs mb-3 leading-tight focus:outline-none focus:shadow-outline"
                   name="password"
                 />
-                <a className="block text-gray-700 text-xs text-right hover:text-blue-700" href="#">
+                <a className="block text-gray-700 text-xs text-right hover:text-blue-700" href="/forgot-password">
                   Forgot Password?
                 </a>
               </div>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full mb-4" type="button">
-                Log In
+              <button className="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full mb-4" type="button">
+                LOG IN
               </button>
               <button className="bg-white hover:bg-white py-2 px-4 rounded w-full flex items-center" type="button">
                 <img src={GoogleIcon} alt="" className="h-5 w-5 ml-3" />
