@@ -22,10 +22,9 @@ const Signup = () => {
   };
 
   return (
-    <section className="flex mb-4">
+    <section className="flex">
       <div className="w-1/2 bg-white h-auto">
-          {/* TODO: Make the image fit the screen without having the scroll */}
-          <img src={Image} alt="" className="object-fill w-auto h-auto" />
+          <img src={Image} alt="" className="object-fill w-full h-auto max-h-screen" />
       </div>
       <div className="w-1/2 lightGrayBG h-auto">
         <div className="div my-auto">

@@ -16,9 +16,9 @@ const Login = () => {
   };
 
   return (
-    <section className="flex mb-4">
+    <section className="flex">
       <div className="w-1/2 bg-white h-auto">
-        <img src={Image} alt="" className="h-screen object-fill" />
+        <img src={Image} alt="" className="h-screen object-fill max-h-screen w-auto ml-10" />
       </div>
       <div className="w-1/2 lightGrayBG h-auto">
         <div className="my-auto">
