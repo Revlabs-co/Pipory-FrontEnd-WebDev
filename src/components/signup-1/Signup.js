@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "../../images/signup1.png";
-import GoogleIcon from "../../images/google.svg";
+import Image from "../../images/Signup/signup1.png";
+import GoogleIcon from "../../images/Icons/google.svg";
 import "./styles.scss";
 
 // TODO: Form Handling (what happens when you press Submit)
@@ -23,14 +23,14 @@ const Signup = () => {
 
   return (
     <section className="flex">
-      <div className="w-1/2 bg-white h-auto">
-          <img src={Image} alt="" className="object-fill w-full h-auto max-h-screen" />
+      <div className="w-1/2 bg-image-color">
+          <img src={Image} alt="" className="object-contain max-h-screen ml-auto mr-auto" />
       </div>
       <div className="w-1/2 lightGrayBG h-auto">
         <div className="div my-auto">
           <div className="text-gray-900 font-bold text-3xl mb-2 text-center mt-16">Signup</div>
           <div className="w-full max-w-xs mx-auto py-8">
-            <form className="rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
+            <form className="rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit} action="/signup/2">
               <div className="mb-4">
                 <label className="block font-semibold text-gray-700 text-sm mb-2">
                   Name:
@@ -70,7 +70,9 @@ const Signup = () => {
                   name="password"
                 />
               </div>
-              <button className="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full mb-4" type="button">
+              <button 
+              className="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full mb-4" 
+              >
                 CONTINUE
               </button>
               <button className="bg-white hover:bg-white py-2 px-4 rounded w-full flex items-center" type="button">

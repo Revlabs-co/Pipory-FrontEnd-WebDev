@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "../../images/login.png";
-import GoogleIcon from "../../images/google.svg";
+import Image from "../../images/Login/login.png";
+import GoogleIcon from "../../images/Icons/google.svg";
 import "./styles.scss";
 
 const Login = () => {
