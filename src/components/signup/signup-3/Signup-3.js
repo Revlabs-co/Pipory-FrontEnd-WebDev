@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from '../../images/Signup/signup3.jpg';
-import Logo from '../../images/Logo/logo-pipory.png';
+import Image from '../../../images/Signup/signup3.jpg';
+import Logo from '../../../images/Logo/logo-pipory.png';
 
 const Signup3 = () => {
     return (

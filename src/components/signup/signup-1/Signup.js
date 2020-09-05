@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "../../images/Signup/signup1.png";
-import GoogleIcon from "../../images/Icons/google.svg";
+import Image from "../../../images/Signup/signup1.png";
+import GoogleIcon from "../../../images/Icons/google.svg";
 import "./styles.scss";
 
 // TODO: Form Handling (what happens when you press Submit)

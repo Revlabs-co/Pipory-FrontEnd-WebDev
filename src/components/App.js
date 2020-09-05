@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import Login from "./login/Login";
-import Signup1 from "./signup-1/Signup";
-import Signup2 from "./signup-2/Signup-2";
-import Signup3 from "./signup-3/Signup-3";
+import Signup1 from "./signup/signup-1/Signup";
+import Signup2 from "./signup/signup-2/Signup-2";
+import Signup3 from "./signup/signup-3/Signup-3";
 
 function App() {
   return (
