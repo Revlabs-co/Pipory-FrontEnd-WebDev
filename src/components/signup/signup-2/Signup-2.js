@@ -6,7 +6,7 @@ const Signup2 = () => {
         <section className="flex">
             <div className="w-1/2 bg-white h-auto">
                 {/* TODO: need to change the picture to the original illustration taken from dribble */}
-                <img src={Image} alt="" className="h-screen w-full object-contain max-h-screen" />
+                <img src={Image} alt="pipory" className="h-screen w-full object-contain max-h-screen" />
             </div>
             <div className="w-1/2 lightGrayBG h-auto">
                 <div className="my-auto">

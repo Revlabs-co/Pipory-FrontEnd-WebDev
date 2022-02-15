@@ -7,11 +7,11 @@ const Signup3 = () => {
         <section className="flex">
             {/* TODO: Make the page responsive */}
             <div className="w-1/2 bg-white h-auto">
-                <img src={Image} alt="" className="h-screen object-fill max-h-screen w-auto" />
+                <img src={Image} alt="pipory" className="h-screen object-fill max-h-screen w-auto" />
             </div>
             <div className="w-1/2 lightGrayBG h-auto">
                 <div className="my-auto">
-                    <img src={Logo} alt="" className="ml-auto mr-auto mt-16" />
+                    <img src={Logo} alt="pipory" className="ml-auto mr-auto mt-16" />
                     <div className="px-16">
                         <form className="px-8 pt-6 pb-8 mb-4">
                             <div className="text-gray-900 font-bold text-4xl mb-2 text-center mt-6">Welcome To Pipory</div>

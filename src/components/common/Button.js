@@ -30,7 +30,7 @@ const Button = ({ type, value }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={logo} alt="" style={{ position: "absolute", left: 20 }} />
+          <img src={logo} alt="pipory" style={{ position: "absolute", left: 20 }} />
           {value}
         </a>
       )}

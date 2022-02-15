@@ -24,7 +24,7 @@ const Signup = () => {
   return (
     <section className="flex">
       <div className="w-1/2 bg-image-color">
-          <img src={Image} alt="" className="object-contain max-h-screen ml-auto mr-auto" />
+          <img src={Image} alt="pipory" className="object-contain max-h-screen ml-auto mr-auto" />
       </div>
       <div className="w-1/2 lightGrayBG h-auto">
         <div className="div my-auto">
@@ -76,7 +76,7 @@ const Signup = () => {
                 CONTINUE
               </button>
               <button className="bg-white hover:bg-white py-2 px-4 rounded w-full flex items-center" type="button">
-                <img src={GoogleIcon} alt="" className="h-5 w-5 ml-3" />
+                <img src={GoogleIcon} alt="pipory" className="h-5 w-5 ml-3" />
                 <div className="font-bold text-black ml-8">Sign in with Google</div>
               </button>
             </form>

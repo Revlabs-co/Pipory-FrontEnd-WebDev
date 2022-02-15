@@ -18,7 +18,7 @@ const Login = () => {
   return (
     <section className="flex">
       <div className="w-1/2 bg-white h-auto">
-        <img src={Image} alt="" className="h-screen object-fill max-h-screen w-auto ml-10" />
+        <img src={Image} alt="pipory" className="h-screen object-fill max-h-screen w-auto ml-10" />
       </div>
       <div className="w-1/2 lightGrayBG h-auto">
         <div className="my-auto">
@@ -58,7 +58,7 @@ const Login = () => {
                 LOG IN
               </button>
               <button className="bg-white hover:bg-white py-2 px-4 rounded w-full flex items-center" type="button">
-                <img src={GoogleIcon} alt="" className="h-5 w-5 ml-3" />
+                <img src={GoogleIcon} alt="pipory" className="h-5 w-5 ml-3" />
                 <div className="font-bold text-black ml-8">Sign in with Google</div>
               </button>
             </form>
