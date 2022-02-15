@@ -57,7 +57,7 @@ const Signup = () => {
                   name="email"
                 />
               </div>
-              <div class="mb-6">
+              <div className="mb-6">
                 <label className="block font-semibold text-gray-700 text-sm mb-2">
                   Password:
                 </label>
